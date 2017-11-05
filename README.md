@@ -8,26 +8,26 @@ Parse your WhatsApp chats to JSON
 ```
 
 ### whatsAppToJson(string | array)
-##### Returns a Promise<JSON[]>
+##### Promise returning an array of chats
 *Takes a path or array of paths* 
 
 ```javascript
 whatsAppToJson(pathOrArrayOfPaths).then(
    (response) => console.log(response),
-   (err) => console.error(err);
+   (err) => console.error(err)
 )
 ```
 
 ##### Result
 ```javascript
 [{
-    'date': Sun Nov 05 2017 10:27:45 GMT+0200
-    'msg': 'Sup!'
+    'date': 'Sun Nov 05 2017 10:27:45 GMT+0200',
+    'msg': 'Sup!',
     'name': 'Randy'
 },
 {
-    'date': Sun Nov 05 2017 10:27:49 GMT+0200
-    'msg': 'Not much'
+    'date': 'Sun Nov 05 2017 10:27:49 GMT+0200',
+    'msg': 'Not much',
     'name': 'Jamie'
 }]
 ```
