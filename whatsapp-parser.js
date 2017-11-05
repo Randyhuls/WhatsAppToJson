@@ -81,5 +81,3 @@ let whatsAppToJson = function(path) {
     });
 
 };
-
-whatsAppToJson('_chat.txt').then((res) => console.log(res))
