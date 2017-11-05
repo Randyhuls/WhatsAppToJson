@@ -44,6 +44,7 @@ let WhatsAppMessage = function(date, time, name, msg) {
 
 };
 
+// Parser
 let parse = function(file) {
     let files = !Array.isArray(file) ? [file] : file;
     let whatsAppChats = [];
@@ -62,7 +63,6 @@ let parse = function(file) {
         whatsAppChats.push(chats);
 
     }
-    console.log(whatsAppChats);
     return whatsAppChats;
 };
 
@@ -82,4 +82,4 @@ let whatsAppToJson = function(path) {
 
 };
 
-whatsAppToJson(['./_chat.txt', './_chat.txt']);
+whatsAppToJson('_chat.txt').then((res) => console.log(res))
